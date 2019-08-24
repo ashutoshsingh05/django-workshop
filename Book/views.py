@@ -5,6 +5,7 @@ from Book.models import Books
 
 
 def view_all_books(request):
+    print("User details: "+request.user)
     objs = Books.objects.all()
 
     print(objs)
